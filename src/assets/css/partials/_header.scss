@@ -1,4 +1,11 @@
 header {
     background: red;
     color: white;
+    @media #{$medium} {width: 500px;}
+}
+
+header {
+        nav {
+            background: pink;
+        }
 }

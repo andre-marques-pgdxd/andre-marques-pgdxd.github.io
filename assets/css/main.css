@@ -2,6 +2,15 @@ header {
   background: red;
   color: white;
 }
+@media (min-width: 600px) {
+  header {
+    width: 500px;
+  }
+}
+
+header nav {
+  background: pink;
+}
 
 footer {
   background-color: yellow;
