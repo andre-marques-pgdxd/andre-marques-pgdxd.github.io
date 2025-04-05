@@ -1,11 +1,43 @@
 header {
-    background: red;
-    color: white;
-    @media #{$medium} {width: 500px;}
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+
+		div {
+			display: flex;
+			gap: 12px;
+			font-size: 12px;
+			font-weight: 800;
+			letter-spacing: 0.1rem;
+			text-transform: uppercase;
+
+			a:link,
+			a:visited,
+			a:hover,
+			a:active {
+				color: var(--color-foreground-muted);
+			}
+		}
+	}
 }
 
-header {
-        nav {
-            background: pink;
-        }
+a.logo {
+	font-size: rem(24);
+	font-weight: 800;
+	text-transform: uppercase;
+	color: var(--color-brand);
+	display: none;
+
+	@media #{$sm} {
+		display: inline;
+	}
+}
+
+a.logo-small {
+	display: inline;
+
+	@media #{$sm} {
+		display: none;
+	}
 }

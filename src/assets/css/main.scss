@@ -1,9 +1,10 @@
-
 @charset "utf-8";
 
-// Import partials.
-
-@import "partials/mediaqueries",
-        "partials/header",
-        "partials/footer",
-        "partials/content";
+@import "normalize",
+"partials/mediaqueries",
+"partials/function",
+"partials/mixin",
+"global",
+"partials/header",
+"partials/footer",
+"partials/content";

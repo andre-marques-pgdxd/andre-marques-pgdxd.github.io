@@ -1,3 +1,19 @@
 footer {
-    background-color: yellow;
+	background-color: var(--color-brand-tertiary);
+	overflow: hidden;
+	color: var(--color-background);
+
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
+		color: var(--color-background);
+	}
+
+	.footer-content {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+		padding: 1rem;
+	}
 }
