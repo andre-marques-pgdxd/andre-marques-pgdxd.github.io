@@ -11,13 +11,19 @@
 
 html {
 	font-size: $html-font-size;
+	min-height: 100vh;
 }
 
 body {
 	margin: 0;
 	font-family: Helvetica;
-	background-color:var(--color-background);
+	background-color: var(--color-background);
 	color: var(--color-foreground);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items:stretch;
+	justify-content: space-between;
 }
 
 a:link,

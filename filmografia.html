@@ -3,9 +3,8 @@
 <head>
 	<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+	<script src="/assets/js/header.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +14,10 @@
 	<nav>
 		<a href="/" class="logo">Studio Ghibli</a>
 		<a href="/" class="logo logo-small">SG</a>
-		<div>
+		<button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+			☰
+		</button>
+		<div class="menu">
 			<a href="/sobre.html">Sobre</a>
 			<a href="/filmografia.html">Filmografia</a>
 			<a href="/realizadores.html">Realizadores</a>
@@ -25,33 +27,39 @@
 </header>
 
 		<h1>Filmografia</h1>
-		
-		
+
+
 		<div class="filmography">
 			<div class="item">
-			  <img src="../assets/images/filmografia/1984-Nausicaä-do-Vale-do-Vento.webp" alt="Capa do filme Nausicaä do Vale do Vento (1984)">
-			  <p><a href="nausicaa.html">Nausicaä do Vale do Vento (1984)</a></p>
+				<img src="../assets/images/filmografia/1984-Nausicaä-do-Vale-do-Vento.webp"
+					alt="Capa do filme Nausicaä do Vale do Vento (1984)">
+				<p><a href="nausicaa.html">Nausicaä do Vale do Vento (1984)</a></p>
 			</div>
 			<div class="item">
-			  <img src="../assets/images/filmografia/1986-O-Castelo-no-Céu.webp" alt="Capa do filme O Castelo no Céu (1986)">
-			  <p><a href="castelo-no-ceu.html">O Castelo no Céu (1986)</a></p>
+				<img src="../assets/images/filmografia/1986-O-Castelo-no-Céu.webp"
+					alt="Capa do filme O Castelo no Céu (1986)">
+				<p><a href="castelo-no-ceu.html">O Castelo no Céu (1986)</a></p>
 			</div>
 			<div class="item">
-			  <img src="..//assets/images/filmografia/1988-Meu-Amigo-Totoro.webp" alt="Capa do filme Meu Amigo Totoro (1988)">
-			  <p><a href="totoro.html">Meu Amigo Totoro (1988)</a></p>
+				<img src="..//assets/images/filmografia/1988-Meu-Amigo-Totoro.webp"
+					alt="Capa do filme Meu Amigo Totoro (1988)">
+				<p><a href="meu-amigo-totoro.html">Meu Amigo Totoro (1988)</a></p>
 			</div>
-		  </div>
+			<div class="item">
+				<img src="..//assets/images/filmografia/Túmulo-dos-Vagalumes.webp"
+					alt="Capa do filme Meu Amigo Totoro (1988)">
+				<p><a href="tumulo-dos-vagalumes.html">Túmulo dos Vagalumes (1988)</a></p>
+			</div>
+			<div class="item">
+				<img src="..//assets/images/filmografia/1989-O-Serviço-de-Entregas-da-Kiki.webp"
+					alt="Capa do filme Meu Amigo Totoro (1988)">
+				<p><a href="servico-entregas-kiki.html">O Serviço de Entregas da Kiki (1989)</a></p>
+			</div>
+		</div>
 
 
 	</div>
 
-
-
-	.filmography {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	  }
 
 
 
@@ -111,4 +119,3 @@
 </body>
 
 </html>
-
