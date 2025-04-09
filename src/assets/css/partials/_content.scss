@@ -28,16 +28,15 @@ th {
 	padding: 16px 8px 8px;
 }
 
-
 .filmography {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
-	width: 100%;
+	gap: 2rem;
+	align-content: flex-start;
 }
 
-.filmography>* {
-	flex: 1 0 30%;
-	/* or whatever percentage fits your layout */
-	margin: 10px;
+@media #{$sm} {
+	.filmography .item img {
+		max-width: 150px;
+	}
 }
