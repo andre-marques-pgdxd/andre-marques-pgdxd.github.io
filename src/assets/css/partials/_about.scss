@@ -1,0 +1,16 @@
+@media #{$md} {
+	.grid {
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+		grid-template-areas: "grid-introduction grid-table";
+		column-gap: 1rem;
+	}
+	
+	.grid-introduction {
+		grid-area: grid-introduction;
+	}
+
+	.grid-table {
+		grid-area: grid-table;
+	}
+}

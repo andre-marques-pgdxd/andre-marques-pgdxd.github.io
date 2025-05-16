@@ -1,16 +1,15 @@
-// Obter o botão
-let mybutton = document.getElementById("scrollToTopBtn");
-
 // Mostrar o botão após fazer scroll
-window.onscroll = function() {
-  scrollFunction();
-};
+window.addEventListener("scroll", function () {
+  scrollFunction()
+});
+
 
 function scrollFunction() {
+  const scrollToTopButton = document.getElementById("scrollToTopBtn");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    scrollToTopButton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    scrollToTopButton.style.display = "none";
   }
 }
 

@@ -1,4 +1,6 @@
 header {
+	margin-bottom: 1rem;
+
 	nav {
 		display: flex;
 		justify-content: space-between;
@@ -30,7 +32,7 @@ header {
 			border: none;
 			color: var(--color-foreground);
 			cursor: pointer;
-			z-index: 2;
+			z-index: 11;
 
 			@media #{$sm} {
 				display: none;
@@ -49,11 +51,26 @@ header {
 				display: flex;
 			}
 
-			a:link,
-			a:visited,
-			a:hover,
-			a:active {
-				color: var(--color-foreground-muted);
+			a {
+				position: relative;
+				color: var(--color-foreground-muted); // <-- Aqui defines a cor do texto
+				text-decoration: none;
+				transition: all 0.3s ease-in-out;
+
+				&::after {
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: -2px;
+					width: 0;
+					height: 2px;
+					background-color: var(--color-foreground-muted); // <-- Cor da linha ao passar o rato
+					transition: width 0.3s ease-in-out;
+				}
+
+				&:hover::after {
+					width: 100%;
+				}
 			}
 		}
 
@@ -70,6 +87,7 @@ header {
 			flex-direction: column;
 			align-items: center;
 			gap: 24px;
+			z-index: 10;
 		}
 	}
 }

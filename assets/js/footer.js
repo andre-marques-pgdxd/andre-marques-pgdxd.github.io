@@ -1,0 +1,2 @@
+function scrollFunction(){const o=document.getElementById("scrollToTopBtn");document.body.scrollTop>20||document.documentElement.scrollTop>20?o.style.display="block":o.style.display="none"}function topFunction(){document.body.scrollTop=0,document.documentElement.scrollTop=0}window.addEventListener("scroll",(function(){scrollFunction()}));
+//# sourceMappingURL=footer.js.map

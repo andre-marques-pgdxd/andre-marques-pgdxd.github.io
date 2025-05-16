@@ -1,0 +1,99 @@
+/* Styles for the news section you can see on the homepage */
+.news-grid {
+	display: grid;
+	grid-template-columns: 1fr; // 1 item by default
+	gap: 2rem;
+	max-width: 1200px;
+	margin: auto;
+
+	@media #{$md} {
+		grid-template-columns: repeat(2, 1fr); // 2 items side by side at $md
+	}
+}
+
+.news-card {
+	position: relative;
+	background: white;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+// NOVO WRAPPER DA IMAGEM
+.news-image-wrapper {
+	height: 250px;
+	overflow: hidden;
+}
+
+.news-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.news-card:hover img {
+	transform: scale(1.1);
+}
+
+.news-content {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.news-tag {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #fff;
+	padding: 4px 10px;
+	font-size: 0.75rem;
+	font-weight: bold;
+	border-radius: 5px;
+	display: inline-block;
+	text-transform: uppercase;
+	z-index: 2;
+}
+
+.news-date {
+	font-size: 0.8rem;
+	color: #555;
+}
+
+.news-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+.news-excerpt {
+	font-size: 0.95rem;
+	color: #333;
+	line-height: 1.4;
+}
+
+.news-image {
+	text-align: center;
+	margin: 1em auto;
+}
+
+.news-image img {
+	max-width: 80%;
+	height: auto;
+	border-radius: 8px;
+	display: block;
+	margin: 0 auto;
+}
+
+.news-image figcaption {
+	margin-top: 0.5em;
+	font-size: 0.9em;
+	color: #555;
+	font-style: italic;
+}

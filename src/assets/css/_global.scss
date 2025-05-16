@@ -12,6 +12,7 @@
 html {
 	font-size: $html-font-size;
 	min-height: 100vh;
+	scroll-behavior: smooth;
 }
 
 .container {
